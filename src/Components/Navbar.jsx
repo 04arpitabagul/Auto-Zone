@@ -14,7 +14,8 @@ const Navbars = () => {
       {/* Orange banner visible only on large screens */}
       <div className="orange-banner d-none d-lg-block text-center py-1">
         <span style={{ color: "#F26D0D", fontWeight: "bold" }}>
-          20% off orders over $100<sup>*</sup> + Free Ground Shipping<sup>**</sup>
+          20% off orders over $100<sup>*</sup> + Free Ground Shipping
+          <sup>**</sup>
         </span>
         <br />
         <span style={{ color: "#5B5D5B", fontSize: "12px" }}>

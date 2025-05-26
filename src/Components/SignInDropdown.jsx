@@ -11,7 +11,9 @@ const SignInDropdown = () => {
       </div>
       <div className="dropdown-option">
         <FaClipboardList className="me-2" /> <strong>Track Order</strong>
-        <div className="option-desc">Use email and order number to track an order</div>
+        <div className="option-desc">
+          Use email and order number to track an order
+        </div>
       </div>
       <div className="dropdown-option">
         <FaTools className="me-2" /> <strong>Find a Repair Shop</strong>

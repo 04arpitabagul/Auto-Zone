@@ -1,0 +1,117 @@
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Offcanvas Styles */
+.custom-offcanvas {
+  width: 300px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Offcanvas Header */
+.custom-offcanvas .offcanvas-header {
+  background-color: #e0e0e0;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+}
+
+.custom-offcanvas .offcanvas-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Offcanvas Body */
+.offcanvas-body {
+  padding: 1rem;
+}
+
+/* Menu Section */
+.menu-section {
+  margin-bottom: 1.5rem;
+}
+
+/* Section Heading */
+.menu-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+/* Divider */
+.menu-divider {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+/* Menu List */
+.menu-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  padding: 6px 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.menu-list li:hover {
+  background-color: #eaeaea;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Single Menu Item (non-list) */
+.menu-item span {
+  display: block;
+  padding: 6px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.menu-item span:hover {
+  background-color: #eaeaea;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Buttons */
+button {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  border-radius: 4px;
+  transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0e0e0 !important;
+  border-color: #bbb !important;
+  color: #000 !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .offcanvas-body {
+    padding: 0.75rem;
+  }
+
+  .menu-heading {
+    font-size: 15px;
+  }
+
+  .menu-list li,
+  .menu-item span {
+    font-size: 13px;
+  }
+}
