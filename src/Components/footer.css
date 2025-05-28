@@ -1,4 +1,23 @@
+.top-subscribe-bar {
+  background-color: #4a4a4a;
+}
+
+.quick-links-bar {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #444;
+}
+
+.quick-links-bar .social-icons i {
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.quick-links-bar .social-icons i:hover {
+  color: #f90;
+}
 .footer-heading {
+  margin-top: 10px;
   font-size: 1rem;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

@@ -7,7 +7,55 @@ import googleplay from "../assets/google-play.svg";
 
 const Footer = () => {
   return (
-    <footer className="footer-section bg-dark text-light pt-5 pb-4">
+    <footer className="footer-section bg-dark text-light">
+      {/* TOP SUBSCRIBE BAR */}
+      <div className="top-subscribe-bar bg-secondary text-white py-3 px-4">
+        <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+          <div className="d-flex align-items-center gap-2">
+            <i className="bi bi-envelope"></i>
+            <span className="fw-bold">GET IN THE ZONE</span>
+            <small className="ms-2 text-light">
+              Subscribe to get the latest deals, promotions, and offerings.
+            </small>
+          </div>
+          <div className="d-flex align-items-center">
+            <input
+              type="email"
+              className="form-control rounded-0"
+              placeholder="Email"
+              style={{ width: "200px" }}
+            />
+            <button className="btn btn-dark rounded-0">→</button>
+          </div>
+        </div>
+      </div>
+
+      {/* QUICK LINKS + SOCIAL ICONS BAR */}
+      <div className="quick-links-bar bg-black text-white py-3 px-4">
+        <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+          <div className="d-flex gap-4 text-white">
+            <div>
+              <i className="bi bi-geo-alt-fill me-2 text-warning" /> Locate A
+              Store
+            </div>
+            <div>
+              <i className="bi bi-box-seam me-2 text-warning" /> Track Your
+              Order
+            </div>
+            <div>
+              <i className="bi bi-clipboard-data me-2 text-warning" /> We're
+              Hiring!
+            </div>
+          </div>
+          <div className="d-flex gap-3 social-icons">
+            <i className="bi bi-facebook" />
+            <i className="bi bi-twitter-x" />
+            <i className="bi bi-youtube" />
+            <i className="bi bi-instagram" />
+          </div>
+        </div>
+      </div>
+
       <Container>
         <Row>
           <Col md={2} xs={6}>

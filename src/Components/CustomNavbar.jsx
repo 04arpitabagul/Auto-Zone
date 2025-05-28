@@ -1,5 +1,6 @@
 import "./CustomNavbar.css";
 import React, { useState } from "react";
+import STORE from "../assets/Store.jpg";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -221,11 +222,102 @@ const CustomNavbar = () => {
       </Modal>
 
       {/* Select Store Modal */}
-      <Modal show={showSelectStore} onHide={() => setShowSelectStore(false)}>
+      <Modal
+        show={showSelectStore}
+        onHide={() => setShowSelectStore(false)}
+        size="lg"
+      >
         <Modal.Header closeButton>
-          <Modal.Title>Select Store</Modal.Title>
+          <Modal.Title>SEARCH FOR A STORE</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Store modal content goes here...</Modal.Body>
+        <Modal.Body>
+          <div className="d-flex">
+            {/* Content Div */}
+            <div className="flex-grow-1 pe-4">
+              <div className="mb-3">
+                <h5>Enter city, state or ZIP code</h5>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Search for a store..."
+                />
+                <p className="text-muted mt-2">
+                  Search and set a store to see product prices and deals near
+                  you.
+                </p>
+              </div>
+
+              <hr className="my-4" />
+
+              <div className="mb-4">
+                <h5>IN-STORE SERVICES</h5>
+                <div className="d-flex flex-wrap gap-3 mt-3">
+                  <span className="badge bg-light text-dark p-2">
+                    Loan-A-Tool Program
+                  </span>
+                  <span className="badge bg-light text-dark p-2">
+                    Q2 Recycling
+                  </span>
+                  <span className="badge bg-light text-dark p-2">
+                    Free Battery Charging
+                  </span>
+                  <span className="badge bg-light text-dark p-2">
+                    Battery Recycling
+                  </span>
+                  <span className="badge bg-light text-dark p-2">
+                    Fix Finder
+                  </span>
+                  <span className="badge bg-light text-dark p-2">
+                    Buy Online, Pick Up In-store
+                  </span>
+                  <span className="badge bg-light text-dark p-2">
+                    AutoZone Rewards
+                  </span>
+                </div>
+              </div>
+
+              <div className="mb-4">
+                <h6 className="fw-bold">
+                  Bundle and save with an STP® oil filter
+                </h6>
+              </div>
+
+              <div className="mb-4">
+                <button className="btn btn-warning">
+                  Join for free and earn more
+                </button>
+              </div>
+
+              <div className="mb-3">
+                <h6>
+                  Pick up in-store today, or get it quickly with Same Day
+                  Delivery
+                </h6>
+              </div>
+
+              <div>
+                <a href="#" className="text-primary">
+                  Check out step-by-step guide and solutions
+                </a>
+              </div>
+            </div>
+
+            {/* Image Div - Replace with your actual image */}
+            <div className="d-none d-md-block" style={{ width: "300px" }}>
+              <img
+                src={STORE}
+                alt="Store location"
+                className="img-fluid rounded"
+              />
+            </div>
+          </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowSelectStore(false)}>
+            Close
+          </Button>
+          <Button variant="primary">Search Stores</Button>
+        </Modal.Footer>
       </Modal>
     </>
   );
