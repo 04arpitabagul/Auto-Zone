@@ -1,0 +1,9 @@
+.slider-card {
+  transition: transform 0.3s ease;
+}
+.slider-card:hover {
+  transform: translateY(-5px);
+}
+.slick-dots li button:before {
+  color: gray;
+}

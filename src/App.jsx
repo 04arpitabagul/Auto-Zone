@@ -7,13 +7,15 @@ import Footer from "./Components/Footer";
 import AppRouter from "./Pages/Router";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Slider1 from "./Components/Slider1";
+import { useLocation } from "react-router-dom";
+import Home from "./Pages/Home";
 function App() {
   return (
     <>
       <Navbar />
       <CustomNavbar />
       <FreeServicesNavbar />
-      <Slider1 />
+      <Home />
 
       <AppRouter />
 

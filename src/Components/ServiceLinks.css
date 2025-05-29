@@ -1,0 +1,84 @@
+.service-links-container {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.service-card {
+  flex: 1 1 30%;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+}
+
+.service-icon {
+  font-size: 24px;
+  color: orange;
+}
+
+.service-text h6 {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.service-text p {
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Banner Styling */
+.banner-ad {
+  width: 80%;
+  margin: 40px auto;
+  background-color: #1e1e1e;
+  border: 5px solid #fcd200;
+  padding: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.banner-logo {
+  height: 50px;
+}
+
+.banner-text h5 {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.banner-text p {
+  font-size: 13px;
+  margin: 5px 0 0 0;
+  font-family: Arial, sans-serif;
+}
+
+.shop-btn {
+  background: white;
+  color: black;
+  font-weight: bold;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
